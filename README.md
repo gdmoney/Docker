@@ -1,7 +1,7 @@
 # Notes
 
 ## General
-**-Container**
+**Container**
 - system isolation method provided in Linux that’s more lightweight than a VM
 
 **Docker**
