@@ -4,7 +4,7 @@
 **- Container**
   - system isolation method provided in Linux that’s more lightweight than a VM
 
-**- Docker **
+**- Docker**
   - tool designed to make it easier to create, deploy, and run applications by using containers
   - PaaS product that use OS-level virtualization to deliver software in packages called containers
 
