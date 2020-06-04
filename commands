@@ -1,6 +1,5 @@
 # Commands
 
-```
 General											Description
 =======											===========
 docker version
@@ -58,4 +57,3 @@ iptables -D DOCKER 1
 
 iptables-save    > /etc/sysconfig/iptables						save new rules to a file
 iptables-restore < /etc/sysconfig/iptables						restore new rules from a file
-```
