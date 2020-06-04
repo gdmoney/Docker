@@ -1,5 +1,3 @@
-# Commands
-
 General											Description
 =======											===========
 docker version
@@ -25,7 +23,6 @@ docker container start nginx1 nginx2							start containers
 docker container rm    ALPINE1 ALPINE2							delete containers
 
 
-
 Networking
 ==========
 docker network ls									list networks
@@ -40,7 +37,6 @@ docker network connect bridge     ALPINE1						connect ALPINE1 container to the 
 docker network connect ALPINE-NET ALPINE2						connect ALPINE2 container to the ALPINE-NET bridge
 
 docker network disconnect ALPINE-NET ALPINE1						disconnect ALPINE1 container from the ALPINE-NET bridge
-
 
 
 iptables
