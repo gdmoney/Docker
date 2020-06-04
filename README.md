@@ -45,6 +45,6 @@
 
 **Overlay**			
 - creates an overlay network over physical network for container-to-container communication
-- each container gets 2 virtual interfaces and 2 bridges are creates
+- each container gets 2 virtual interfaces and 2 bridges are created
 - one bridge for physical network communication; another bridge for VxLAN communication (`docker_gwbridge`)
 
