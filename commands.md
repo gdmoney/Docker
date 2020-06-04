@@ -1,6 +1,8 @@
 ```
-General											Description
+Command 										Description
 =======											===========
+General
+=======
 docker version
 docker info										show system-wide info
 
