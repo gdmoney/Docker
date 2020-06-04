@@ -1,17 +1,22 @@
 # Notes
 
 ## General
-- Container - system isolation method provided in Linux that’s more lightweight than a VM
+- Container
+  - system isolation method provided in Linux that’s more lightweight than a VM
 
-- Docker - tool designed to make it easier to create, deploy, and run applications by using containers
-				 - PaaS product that use OS-level virtualization to deliver software in packages called containers
+- Docker 
+  - tool designed to make it easier to create, deploy, and run applications by using containers
+  - PaaS product that use OS-level virtualization to deliver software in packages called containers
 
-- Docker image - a container is launched by running an image
-				       - an image is an executable package that includes everything needed to run an application:
-				       - the code, a runtime, libraries, environment variables, and configuration files
+- Docker image
+  - a container is launched by running an image
+  - an image is an executable package that includes everything needed to run an application:
+  - the code, a runtime, libraries, environment variables, and configuration files
 
-- Docker container - a runtime instance of an image - what the image becomes in memory when executed
-				           - that is, an image with state, or a user process
+- Docker container 
+  - a runtime instance of an image
+  - what the image becomes in memory when executed
+  - that is, an image with state, or a user process
 
 
 
