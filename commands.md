@@ -1,6 +1,4 @@
 ```
-Command 										Description
-=======											===========
 General
 =======
 docker version
