@@ -28,8 +28,8 @@
   - virtual cable for connecting two namespaces/containers
   - one end of the VEth gets renamed to eth0 inside the container, the other end connects to the bridge
 
-### Networking drivers (modes)***
-##- Bridge (dflt)**		
+### Networking drivers (modes)
+**- Bridge (dflt)**		
 - connects multiple VEths together and to the host physical interface
 - default name is 'Docker0' and it runs in the default namespace
 - containers connected to the same bridge can communicate to each other but not to containers connected to a different bridge
