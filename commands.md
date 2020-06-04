@@ -1,6 +1,5 @@
+## General
 ```
-General
-=======
 docker version
 docker info										show system-wide info
 
@@ -23,9 +22,10 @@ docker container stop  ALPINE1 ALPINE2							stop containers
 docker container start nginx1 nginx2							start containers
 docker container rm    ALPINE1 ALPINE2							delete containers
 ```
+
+
+## Networking
 ```
-Networking
-==========
 docker network ls									list networks
 docker network create ALPINE-NET							create a bridge named ALPINE-NET
 docker network rm     ALPINE-NET							delete bridge
@@ -40,9 +40,9 @@ docker network connect ALPINE-NET ALPINE2						connect ALPINE2 container to the 
 docker network disconnect ALPINE-NET ALPINE1						disconnect ALPINE1 container from the ALPINE-NET bridge
 ```
 
+
+## iptables
 ```
-iptables
-========
 iptables -L -n -v
 iptables -L DOCKER -n -v
 iptables -L DOCKER -n -v -t nat
