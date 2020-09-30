@@ -8,6 +8,8 @@ docker run -it ubuntu
 
 ### Update
 apt update  
+
+apt install awscli  
 apt install git  
 apt install nano  
 apt install net-tools  
