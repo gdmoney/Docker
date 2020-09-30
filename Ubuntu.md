@@ -14,7 +14,7 @@ apt install net-tools
 
 
 ### Misc
-docker image ls
-docker ps
-docker attach CONTAINER_NAME
-CTRL + pq
+docker image ls  
+docker ps  
+docker attach CONTAINER_NAME  
+CTRL + pq  
