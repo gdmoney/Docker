@@ -9,7 +9,6 @@ docker run -it ubuntu
 ### Update
 apt update  
 
-apt install awscli  
 apt install git  
 apt install iputils-ping  
 apt install nano  
