@@ -4,8 +4,8 @@ docker version
 docker info										show system-wide info
 
 docker image ls										list images
-docker image rm IMAGE_ID					delete image
-docker image rmi REPO:TAG         delete image
+docker image rm IMAGE_ID					                        delete image
+docker image rmi REPO:TAG                                                               delete image
 
 docker run -dit --name ALPINE1 alpine ash						start a container and connect it to the default    bridge
 docker run -dit --name ALPINE2 --network ALPINE-NET alpine ash				start a container and connect it to the ALPINE-NET bridge
