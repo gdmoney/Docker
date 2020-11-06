@@ -8,6 +8,7 @@ docker run -it ubuntu
 
 ### Update
 apt update  
+apt upgrade  
 
 apt install git  
 apt install iputils-ping  
