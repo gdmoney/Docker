@@ -6,18 +6,16 @@ docker pull ubuntu
 docker run -it ubuntu
 
 
-### Update
+### Install packages
 apt update  
 apt upgrade  
 
-apt install git  
+apt install apt-utils
 apt install iputils-ping  
 apt install nano  
 apt install net-tools  
+apt install python3-pip
+apt install software-properties-common
 
-
-### Misc
-docker image ls  
-docker ps  
-docker attach CONTAINER_NAME  
-CTRL + pq  
+pip3 install --upgrade pip
+pip3 install netmiko
