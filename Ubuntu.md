@@ -13,7 +13,6 @@ apt upgrade
 apt install apt-utils  
 apt install curl
 apt install iputils-ping  
-apt install nano  
 apt install net-tools  
 apt install python3-pip  
 apt install software-properties-common  
