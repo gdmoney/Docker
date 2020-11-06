@@ -10,12 +10,12 @@ docker run -it ubuntu
 apt update  
 apt upgrade  
 
-apt install apt-utils
+apt install apt-utils  
 apt install iputils-ping  
 apt install nano  
 apt install net-tools  
-apt install python3-pip
-apt install software-properties-common
+apt install python3-pip  
+apt install software-properties-common  
 
-pip3 install --upgrade pip
+pip3 install --upgrade pip  
 pip3 install netmiko
