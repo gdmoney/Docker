@@ -13,7 +13,7 @@ docker run -dit --name NGINX1  --network TESTBRIDGE -p 8081:80 nginx			start a c
 docker run -dit --name NGINX2  --network TESTBRIDGE -p 8082:80 nginx
 docker run -dit --name ALPINE3 --network host alpine ash				start a container and bind it directly to the host's network
 
-docker attach CONTAINER_ID									connect to a container
+docker attach CONTAINER_ID				                                connect to a container
 CTRL + pq										disconnect from a container
 
 docker ps										list containers
