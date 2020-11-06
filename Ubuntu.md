@@ -1,5 +1,5 @@
 ### Download
-docker-pull ubuntu
+docker pull ubuntu
 
 
 ### Run
