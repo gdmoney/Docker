@@ -48,6 +48,7 @@ docker network disconnect ALPINE-NET ALPINE1						disconnect ALPINE1 container f
 iptables -L -n -v
 iptables -L DOCKER -n -v
 iptables -L DOCKER -n -v -t nat
+iptables -L DOCKER -n --line-numbers
 
 iptables -A DOCKER -p tcp -s 192.168.255.0/24 -d 172.19.0.2 --dport 80 -j ACCEPT
 iptables -A DOCKER -p tcp -s 0.0.0.0/0 -d 172.19.0.2 --dport 80 -j ACCEPT -i net2
