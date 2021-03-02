@@ -23,6 +23,8 @@ docker container start CONTAINER_ID							start containers
 docker container stop  CONTAINER_ID							stop containers
 docker container inspect CONTAINER_ID                                                   show detailed info about the container
 docker container rm    CONTAINER_ID							delete containers
+
+docker logs CONTAINER_ID                        view logs
 ```
 
 
