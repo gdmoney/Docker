@@ -37,7 +37,7 @@ docker network rm     NETWORK_ID							delete a network
 
 docker network inspect host								show detailed info about the host              network
 docker network inspect bridge								show detailed info about the default    bridge network
-docker network inspect NAME							        show detailed info about the custom bridge network
+docker network inspect NAME							        show detailed info about the custom     bridge network
 
 docker network connect bridge     ALPINE1						connect ALPINE1 container to the default    bridge
 docker network connect ALPINE-NET ALPINE2						connect ALPINE2 container to the ALPINE-NET bridge
