@@ -7,6 +7,7 @@ docker image ls										list images
 docker image rm IMAGE_ID					                        delete image
 docker image rmi REPO:TAG                                                               delete image
 
+docker run -it ubuntu
 docker run -dit --name ALPINE1 alpine ash						start a container and connect it to the default    bridge
 docker run -dit --name ALPINE2 --network ALPINE-NET alpine ash				start a container and connect it to the ALPINE-NET bridge
 docker run -dit --name NGINX1  --network TESTBRIDGE -p 8081:80 nginx			start a container, connect it to the TESTBRIDGE and setup port forwarding from 8081 > 80 (host NIC to container)
