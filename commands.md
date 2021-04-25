@@ -15,9 +15,9 @@ docker volume inspect VOLUME_NAME
 docker volume rm VOLUME_NAME
 
 docker run -it --name BLAHBLAH ubuntu
-docker run -it --name BLAHBLAH -v VOLUME_NAME IMAGE_NAME                  start a container and attach a volume
+docker run -it --name BLAHBLAH -v VOLUME_NAME IMAGE_NAME                  start a container and attach a volume for persistent storage
 
-docker run -dit --name ALPINE1 alpine ash                                 start a container and connect it to the default    bridge
+docker run -dit --name ALPINE1 alpine ash                                 start a container and connect it to the default bridge
 docker run -dit --name ALPINE2 --network ALPINE-NET alpine ash            start a container and connect it to the ALPINE-NET bridge
 docker run -dit --name NGINX1  --network TESTBRIDGE -p 8081:80 nginx      start a container, connect it to the TESTBRIDGE and setup port forwarding from 8081 > 80 (host NIC to container)
 docker run -dit --name NGINX2  --network TESTBRIDGE -p 8082:80 nginx
@@ -40,8 +40,8 @@ docker logs CONTAINER_ID                  �
 
 ## Networking
 ```
-docker network ls                                                         list networks
 docker network create NAME                                                create a network
+docker network ls                                                         list networks
 docker network rm NETWORK_ID                                              delete a network
 
 docker network inspect host                                               show detailed info about the host network
