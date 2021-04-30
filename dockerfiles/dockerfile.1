@@ -1,0 +1,10 @@
+FROM ubuntu:20.04
+
+RUN apt update && apt install -y \
+	apt-utils \
+	curl \
+	git \
+	tftpd-hpa \
+	vim \
+	wget \
+&& rm -rf /var/lib/apt/lists/*
