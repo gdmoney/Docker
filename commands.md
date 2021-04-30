@@ -5,6 +5,7 @@ docker info                       
 
 docker pull ubuntu                                                        download docker image
 
+docker image build -t NAME:TAG -f DOCKERFILE .                            create a docker image from a dockerfile
 docker image ls                                                           list images
 docker image rm IMAGE_ID                                                  delete image
 docker image rmi REPO:TAG                                                 delete image
