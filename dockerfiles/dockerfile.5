@@ -1,0 +1,21 @@
+FROM ubuntu:20.04
+
+RUN apt update && apt install -y \
+	apt-utils \
+	curl \
+	git \
+	python3-pip \
+	tftpd-hpa \
+	vim \
+	wget \
+&& rm -rf /var/lib/apt/lists/*
+RUN pip3 install --upgrade pip \
+	keyring \
+	keyrings.alt \
+	netmiko
+RUN useradd -ms /bin/bash siteadmin && su siteadmin
+RUN mkdir /home/siteadmin/actions-runner && mkdir /home/siteadmin/actions-runner/network-automation-github-actions
+RUN cd /home/siteadmin/actions-runner/
+RUN git clone https://github.com/gdmoney/network-automation-github-actions.git
+RUN curl -o actions-runner-linux-x64-2.278.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.278.0/actions-runner-linux-x64-2.278.0.tar.gz
+RUN tar xzf ./actions-runner-linux-x64-2.278.0.tar.gz
