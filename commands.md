@@ -25,15 +25,15 @@ docker run -dit --name NGINX2  --network TESTBRIDGE -p 8082:80 nginx
 docker run -dit --name ALPINE3 --network host alpine ash                  start a container and bind it directly to the host's network
 
 docker attach CONTAINER_ID                                                connect to a container
-CTRL + pq                                                                 disconnect from a container
+CTRL + pq                                                                 disconnect from a container w/o exiting it
 
 docker ps                                                                 list containers
 docker container ls -a
 
-docker container start CONTAINER_ID                                       start containers
-docker container stop CONTAINER_ID                                        stop containers
+docker container start CONTAINER_ID                                       start container
+docker container stop CONTAINER_ID                                        stop container
 docker container inspect CONTAINER_ID                                     show detailed info about the container
-docker container rm CONTAINER_ID                                          delete containers
+docker container rm CONTAINER_ID                                          delete container
 
 docker logs CONTAINER_ID                                                  view logs
 ```
