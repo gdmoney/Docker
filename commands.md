@@ -36,6 +36,8 @@ docker container inspect CONTAINER_ID              �
 docker container rm CONTAINER_ID                                          delete container
 
 docker logs CONTAINER_ID                                                  view logs
+
+docker exec -it <CONTAINER_NAME> /bin/bash                                run a command in a running container
 ```
 
 
