@@ -27,8 +27,8 @@ docker run -dit --name ALPINE3 --network host alpine ash        
 docker attach CONTAINER_ID                                                connect to a container
 CTRL + pq                                                                 disconnect from a container w/o exiting it
 
-docker ps                                                                 list containers
-docker container ls -a
+docker ps                                                                 list running containers
+docker container ls -a                                                    list all containers
 
 docker container start CONTAINER_ID                                       start container
 docker container stop CONTAINER_ID                                        stop container
