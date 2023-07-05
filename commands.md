@@ -37,7 +37,7 @@ docker container rm CONTAINER_ID                
 
 docker logs CONTAINER_ID                                                  view logs
 
-docker exec -it <CONTAINER_NAME> /bin/bash                                run a command in a running container
+docker exec -it <CONTAINER_NAME> /bin/bash                                connect to a container shell
 ```
 
 
