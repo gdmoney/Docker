@@ -15,8 +15,9 @@ docker volume ls
 docker volume inspect VOLUME_NAME
 docker volume rm VOLUME_NAME
 
-docker run -it --name BLAHBLAH ubuntu
-docker run -it --name BLAHBLAH -v VOLUME_NAME IMAGE_NAME                  start a container and attach a volume for persistent storage
+docker run -dit --name=alpine alpine /bin/sh
+docker run -dit --name BLAHBLAH ubuntu
+docker run -dit --name BLAHBLAH -v VOLUME_NAME IMAGE_NAME                  start a container and attach a volume for persistent storage
 
 docker run -dit --name ALPINE1 alpine                                     start a container and connect it to the default bridge
 docker run -dit --name ALPINE2 --network ALPINE-NET alpine                start a container and connect it to the ALPINE-NET bridge
@@ -54,6 +55,14 @@ docker network connect bridge ALPINE1              �
 docker network connect ALPINE-NET ALPINE2                                 connect ALPINE2 container to the ALPINE-NET bridge
 
 docker network disconnect ALPINE-NET ALPINE1                              disconnect ALPINE1 container from the ALPINE-NET bridge
+
+# create L3 IPvlan network and map it to the net2 parent interface
+docker network create -d ipvlan \
+--subnet=192.168.214.0/24 \
+-o ipvlan_mode=l3 \
+-o parent=net2 ipvlantest
+
+docker run -dit --name=alpine --net=ipvlantest --ip=192.168.214.10 alpine /bin/sh
 ```
 
 
