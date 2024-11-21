@@ -36,7 +36,7 @@
 ### Networking drivers (modes)
 **Bridge (dflt)**		
 - connects multiple VEths together and to the host physical interface
-- default name is `Docker0` and it runs in the default namespace
+- default name is `docker0` and it runs in the default namespace
 - containers connected to the same bridge can communicate to each other but not to containers connected to a different bridge
 - containers can be connected to multiple bridges
 - NAT to communicate with the outside world
